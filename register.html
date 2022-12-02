@@ -28,19 +28,20 @@
             </li>
         </ul>
     </nav>
+            
 
     <section class="registration">
         <div class="register-form">
             <h1>Register <span>Here</span></h1>
-            <form action="">
+            <form action="" onsubmit="return validateform()">
 
             <input type="text" name="myname1" placeholder="Name" id="name" required>
             <input type="email" name="myemail" placeholder="Email-Id" id="" required>
-            <input type="tel" name="myphone" placeholder="Phone No." id="" required>
+            <input type="tel" name="myphone" placeholder="Phone No." id="phonenum" required>
             <input type="number" name="myage" placeholder="Age" id="" required>
             <h4>Gender</h4>
-            <input type="radio" name="mygender" id="gender" required> Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <input type="radio" name="mygender" id="gender"> Female
+            <input type="radio" name="mygender" id="" required> Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="radio" name="mygender" id=""> Female
             <h4>Departure</h4>
             <input type="datetime-local" name="departuredate" id="" required>
             <h4>Return</h4>
@@ -68,7 +69,6 @@
         </form>
         </div>
     </section>
-
 <!-- Footer -->
 
 <section class="footer">
@@ -104,6 +104,19 @@
         <p>Copyright © 2022 Firstflight Travels All Rights Reserved.<br>Website developed by: Mohd. Rahil</p>
     </div>
 </section>
+<script>
+    function validateform(){ 
+        var tel=document.getElementById("phonenum").value;  
 
+        if(tel.length<10){  
+            alert("Phone Number must be of atleast 10 digits!");  
+            return false;  
+        } else if(isNaN(tel)){
+            alert("Only numbers are allowed!");
+            return false;
+        }
+        return true;
+}  
+</script>
 </body>
 </html>
