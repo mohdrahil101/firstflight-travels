@@ -109,10 +109,10 @@
         var tel=document.getElementById("phonenum").value;  
 
         if(tel.length<10){  
-            alert("Phone Number must be of atleast 10 digits!");  
+            alert("Phone number must be of atleast 10 digits!");  
             return false;  
         } else if(isNaN(tel)){
-            alert("Only numbers are allowed!");
+            alert("Phone number does not include character!");
             return false;
         }
         return true;
