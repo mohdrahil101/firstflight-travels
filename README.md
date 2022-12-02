@@ -1,2 +1,2 @@
 # firstflight-travels
-A travel website project created using HTML and CSS.
+A travel website project created using HTML, CSS and JavaScript.
