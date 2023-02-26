@@ -551,8 +551,7 @@ nav ul li a{
 /* Contact Us */
 
 .contactbody{
-    /* background-color: #101010; */
-    background-image: url("https://ik.imagekit.io/mohdrahil101/files/contact-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668283931922");
+    background-color: #101010;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -618,8 +617,7 @@ nav ul li a{
 /* Registration Form */
 
 .register-body{
-    /* background-color: #101010; */
-    background-image: url("https://ik.imagekit.io/mohdrahil101/files/register-bg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668283940646");
+    background-color: #101010;
     background-repeat: no-repeat;
     background-size: cover;
 
